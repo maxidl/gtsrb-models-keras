@@ -179,8 +179,9 @@ if __name__ == "__main__":
     usage_text = "Run as " + __file__ + " [options]"
     parser = argparse.ArgumentParser(description=usage_text)
     parser.add_argument(
-        "-a", "--architecture", dest="architecture", type=str, required=True,
-        help="model architecture to train. Type 'alex' or 'vgg19' or 'resnet50' or 'lenet-5'"
+        "-a", "--architecture", dest="architecture", required=True,
+        choices=['alex', 'vgg19', 'resnet50', 'lenet-5'],
+        help="model architecture for training. \nOptions: ['alex', 'vgg19', 'resnet50', 'lenet-5']"
     )
     parser.add_argument(
         "-t", "--train_path", dest="train_path", type=str, required=False,
