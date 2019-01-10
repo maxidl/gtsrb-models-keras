@@ -32,9 +32,9 @@ python train_model.py
 | ['-t', '--train_path'] | False | False | res/GTSRB/train/Final_Training/Images/" | Input directory for train set | 
 | ['-v', '--validation_path'] | False | False | res/GTSRB/test/Final_Test/Images/ | Input directory for validation set | 
 | ['-l', '--validation_labels'] | False | False | res/GTSRB/test/Final_Test/GT-final_test.csv | Path to 'GT-final_test.csv' file | 
-| ['-i', '--image_dim'] | False | False | 64 | Image width and height in pixel (width == height) | 
+| ['-i', '--image_dim'] | False | False | 64 | Image width and height in pixel| 
 | ['-g', '--grayscale'] | False | False | False | Train only on grayscale images | 
-| ['-r', '--result_folder'] | False | False | results/ | Recursively walk through all folders in the project directory | 
+| ['-r', '--result_folder'] | False | False | results/ | Result folder for trained model and generated images and logs. | 
 
 #### Usage example
 
